@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Dashboard</string>
+    <string name="no_internet">No Internet</string>
+
+    <string name="call">Call</string>
+    <string name="account">Account</string>
+    <string name="notification">Notification</string>
+    <string name="chat">Chat</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+    <string name="completed">Completed</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="new_">New</string>
+
+    <string name="value">value</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name_cant_be_empty">Name cant\'t be empty</string>
+    <string name="email_cant_be_empty">Email cant\'t be empty</string>
+    <string name="email_not_valid">Email is not valid</string>
+    <string name="password_cant_be_empty">Password cant\'t be empty</string>
+    <string name="address_cant_be_empty">Address cant\'t be empty</string>
+    <string name="please_enter_valid_email">please enter valid email</string>
+    <string name="password_legngth_should_be">Password length should be greater than 3.</string>
+    <string name="sign_up_successfully">Sign up successfully</string>
+    <string name="login">Login</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="dont_have_account">"Don't have an account ? "</string>
+    <string name="sign_up_">"Sign up "</string>
+    <string name="already_have_account">"Already have an account ? "</string>
+    <string name="press_back_again_to_exit">Press back again to exit</string>
+    <string name="wrong_email">Wrong Email....</string>
+    <string name="wrong_password">Wrong password....</string>
+    <string name="logout">Logout</string>
+    <string name="save">Save</string>
+</resources>

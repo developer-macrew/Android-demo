@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="errorDrawable"
+            type="Integer" />
+        <variable
+            name="data"
+            type="com.example.dashboard.ui.fragments.home.model.Data" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iconIV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_account"
+            app:imageUrl='@{data.icon}'
+            app:placeholder="@{errorDrawable}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{data.productName}"
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/itemDesTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iconIV" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemDesTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{data.description}"
+            android:paddingHorizontal="10dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iconIV"
+            app:layout_constraintTop_toBottomOf="@+id/itemTitleTV" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
